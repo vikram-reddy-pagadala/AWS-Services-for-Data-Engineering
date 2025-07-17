@@ -9,7 +9,7 @@
 
 #### **📌 Why Data Engineers should know Amazon EMR**
 
-**1. Run Popular Big Data Frameworks at Scale**
+#### **1. Run Popular Big Data Frameworks at Scale**
 
 ✓ Apache Spark: Distributed in-memory processing.
 
@@ -21,25 +21,25 @@
 
 ✓ Flink: Real-time streaming analytics.
 
-**2. Decoupled Storage via Amazon S3**
+#### **2. Decoupled Storage via Amazon S3**
 
 ✓ EMR separates compute from storage by using Amazon S3 as the data lake.
 
 ✓ You pay only for the compute you use: no need to persist data in HDFS.
 
-**3. Spot Instances for Cost Optimization**
+#### **3. Spot Instances for Cost Optimization**
 
 ✓ Run EMR clusters using EC2 Spot Instances for up to 90% cost savings.
 
 ✓ Configure instance fleets or use EMR on EKS for elastic scaling.
 
-**4. EMR Serverless (NEW & Growing)**
+#### **4. EMR Serverless (NEW & Growing)**
 
 ✓ No cluster to manage: just submit Spark or Hive jobs and EMR takes care of provisioning, scaling and termination.
 
 ✓ Ideal for unpredictable or bursty workloads.
 
-**5. Built-in Integrations**
+#### **5. Built-in Integrations**
 
 ✓ Glue Data Catalog: Unified schema management.
 
@@ -51,13 +51,13 @@
 
 ✓ SageMaker: ML model training and deployment.
 
-**6. EMR Notebooks**
+#### **6. EMR Notebooks**
 
 ✓ Jupyter-based interface for interactive development.
 
 ✓ Great for exploratory data analysis and debugging Spark jobs.
 
-📌 Common Data Engineering Use Cases
+#### ** 📌 Common Data Engineering Use Cases**
 
 ✅ Daily ETL pipelines that transform and clean TB–PB-scale data
 
@@ -69,17 +69,17 @@
 
 ✅ Building and serving large-scale data marts or dimensional models
 
-📌 EMR Configuration Tips
+#### **📌 EMR Configuration Tips**
 
 1. Choose instance types based on workload:
 
- • m6g.xlarge → general-purpose
+    • m6g.xlarge → general-purpose
 
- • r6g.2xlarge → memory-intensive Spark
+    • r6g.2xlarge → memory-intensive Spark
 
- • c5.xlarge → compute-heavy jobs
+    • c5.xlarge → compute-heavy jobs
 
- • i4i.4xlarge → fast local storage for spill-heavy workloads
+    • i4i.4xlarge → fast local storage for spill-heavy workloads
 
 2. Use EMRFS consistent view for strong S3 read-after-write behavior.
  
